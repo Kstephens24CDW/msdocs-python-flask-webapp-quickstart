@@ -2,7 +2,7 @@ import os
 # Azure OpenAI
 from langchain_openai import AzureChatOpenAI
 # OpenAI
-from langchain_openai import ChatOpenAI
+#from langchain_openai import ChatOpenAI
 
 from flask import (Flask, redirect, render_template, request,
                    send_from_directory, url_for)
