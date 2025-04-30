@@ -1,7 +1,6 @@
 import os
-python
 # Azure OpenAI
-from langchain_openai import AzureChatOpenAI
+from langchain.chat_models import AzureChatOpenAI
 # OpenAI
 #from langchain_openai import ChatOpenAI
 
