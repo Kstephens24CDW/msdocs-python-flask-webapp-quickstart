@@ -1,6 +1,6 @@
 import os
 # Azure OpenAI
-from langchain.chat_models import AzureChatOpenAI
+from langchain_openai import AzureChatOpenAI
 # OpenAI
 #from langchain_openai import ChatOpenAI
 
@@ -15,7 +15,7 @@ azure_deployment = os.environ['AZURE_OPENAI_DEPLOYMENT_NAME']
 model_name = os.environ['OPENAI_MODEL_NAME']
 api_version = os.environ['AZURE_OPENAI_API_VERSION']
 # Only needed if you're not using a managed identity
-#api_key = os.environ['OPENAI_API_KEY']
+api_key = os.environ['OPENAI_API_KEY']
 
 # OpenAI
 # api_key = os.environ['OPENAI_API_KEY']
@@ -40,7 +40,7 @@ def hello():
         azure_deployment=azure_deployment,
         model_name=model_name,
         api_version=api_version,
-        #api_key=api_key
+        api_key=api_key
     )
     text = llm.invoke(req).content
 
