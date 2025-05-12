@@ -21,7 +21,7 @@ app = Flask(__name__)
 azure_endpoint = os.environ['AZURE_OPENAI_ENDPOINT']
 azure_deployment = os.environ['AZURE_OPENAI_DEPLOYMENT_NAME']
 model_name = os.environ['OPENAI_MODEL_NAME']
-#api_version = os.environ['AZURE_OPENAI_API_VERSION']
+api_version = os.environ['AZURE_OPENAI_API_VERSION']
 
 def get_database_connection(connection_string=None):
     """Create and return a database connection using the provided connection string."""
